@@ -7,19 +7,27 @@
 список: ["123", "234", 123, "567"], ищем: "123", ответ: -1
 список: [], ищем: "123", ответ: -1 '''
 
-list  = ['1','2','3','4','66','2','66']
-print(list.count('11'))
+list = ["qwe", "asd", "zxc", "qwe", "ertqwe"]
+text = 'qwe'
 
-'''
-x=[["hi hello"], ["this is other"],["this"],["something"],["this"],["last element"]]
-for index, line in enumerate(x):
-    print(index, line)'''
+count = list.count('qwe')
 
 
-'''
-0 ['hi hello']
-1 ['this is other']
-2 ['this']
-3 ['something']
-4 ['this']
-5 ['last element']'''
+indexFirst = list.index(text)
+indexSecond = 0
+for i in list:
+    if text in list:
+        if count == 2:
+            indexSecond = list.index(text,indexFirst+1,len(list)-1)
+            print(indexSecond)
+            break
+        else:
+            print('-1')
+            break
+    else:
+        print('-1')
+        break
+
+
+
+
