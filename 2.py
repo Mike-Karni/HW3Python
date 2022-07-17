@@ -7,19 +7,21 @@
 список: ["123", "234", 123, "567"], ищем: "123", ответ: -1
 список: [], ищем: "123", ответ: -1 '''
 
-list = ["qwe", "asd", "zxc", "qwe", "ertqwe"]
-text = 'qwe'
-
-count = list.count('qwe')
 
 
-indexFirst = list.index(text)
+list = ["qwe", "asd", "abs", "qwe", "ertqwe"]
+text = input("Введите элемент списка на проверку ")
+count = list.count(text)
+try :
+    indexFirst = list.index(text)
+except:
+    print("Данный элемент не находится в списке")
 indexSecond = 0
 for i in list:
     if text in list:
-        if count == 2:
+        if count >= 2:
             indexSecond = list.index(text,indexFirst+1,len(list)-1)
-            print(indexSecond)
+            print(f"Индекс второго вхождения равен {indexSecond}")
             break
         else:
             print('-1')
@@ -27,7 +29,4 @@ for i in list:
     else:
         print('-1')
         break
-
-
-
 
