@@ -7,12 +7,10 @@
 список: ["123", "234", 123, "567"], ищем: "123", ответ: -1
 список: [], ищем: "123", ответ: -1 '''
 
-
-
 list = ["qwe", "asd", "abs", "qwe", "ertqwe"]
 text = input("Введите элемент списка на проверку ")
 count = list.count(text)
-try :
+try:
     indexFirst = list.index(text)
 except:
     print("Данный элемент не находится в списке")

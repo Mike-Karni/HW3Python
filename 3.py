@@ -21,6 +21,7 @@ Sample Output 2:
 a 3'''
 
 words = input("Введите предложение ").lower().split()
+
 for word in words:
     count = words.count(word)
     if count < 2:
